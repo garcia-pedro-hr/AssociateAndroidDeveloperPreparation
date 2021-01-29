@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.ToastFragment">
+
+    <Button
+        android:id="@+id/bt_short_toast"
+        style="@style/ClickableTextRow"
+        android:text="@string/toast_short"/>
+
+    <Button
+        android:id="@+id/bt_long_toast"
+        style="@style/ClickableTextRow"
+        android:text="@string/toast_long"/>
+
+    <Button
+        android:id="@+id/bt_custom_toast"
+        style="@style/ClickableTextRow"
+        android:text="@string/toast_custom"/>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ClickableTextRow" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">116dp</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:paddingStart">18dp</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+</resources>

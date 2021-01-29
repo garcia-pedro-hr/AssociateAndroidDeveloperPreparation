@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/snackbar_fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SnackbarFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/bt_short_snackbar"
+            style="@style/ClickableTextRow"
+            android:text="@string/snackbar_short"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <Button
+            android:id="@+id/bt_long_snackbar"
+            style="@style/ClickableTextRow"
+            android:text="@string/snackbar_long"
+            app:layout_constraintTop_toBottomOf="@id/bt_short_snackbar"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <Button
+            android:id="@+id/bt_indefinite_snackbar"
+            style="@style/ClickableTextRow"
+            android:text="@string/snackbar_indefinite"
+            app:layout_constraintTop_toBottomOf="@id/bt_long_snackbar"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_animation_mode"
+            android:layout_width="wrap_content"
+            style="@style/ClickableTextRow"
+            android:text="@string/animation_mode"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bt_indefinite_snackbar"/>
+
+        <RadioGroup
+            android:id="@+id/rg_animation_modes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/tv_animation_mode"
+            app:layout_constraintBottom_toBottomOf="@id/tv_animation_mode"
+            app:layout_constraintStart_toEndOf="@id/tv_animation_mode"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rb_animation_mode_fade"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/animation_mode_fade"
+                android:textAllCaps="true"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rb_animation_mode_slide"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/animation_mode_slide"
+                android:textAllCaps="true"/>
+
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

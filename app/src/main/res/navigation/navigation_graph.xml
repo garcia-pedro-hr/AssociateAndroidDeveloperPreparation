@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.phgarcia.aadp.fragments.MainFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_toastFragment"
+            app:destination="@id/toastFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_snackbarFragment"
+            app:destination="@id/snackbarFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/toastFragment"
+        android:name="com.phgarcia.aadp.fragments.ToastFragment"
+        android:label="@string/screen_title_toast"
+        tools:layout="@layout/fragment_toast" />
+
+    <fragment
+        android:id="@+id/snackbarFragment"
+        android:name="com.phgarcia.aadp.fragments.SnackbarFragment"
+        android:label="@string/screen_title_snackbar"
+        tools:layout="@layout/fragment_snackbar" />
+</navigation>

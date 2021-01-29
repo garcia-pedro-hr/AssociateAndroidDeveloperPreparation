@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Associate Android Developer Preparation</string>
+
+    <string name="screen_title_toast">Toasts</string>
+    <string name="screen_title_snackbar">Snackbar</string>
+
+    <string name="toast">Toasts</string>
+    <string name="snackbar">Snackbars</string>
+    <string name="localization">Localization</string>
+
+    <string name="toast_short">Show Short Toast</string>
+    <string name="toast_long">Show Long Toast</string>
+    <string name="toast_custom">Show Custom Toast</string>
+    <string name="toast_counter">%1$d toasts created</string>
+
+    <string name="snackbar_short">Show Short Snackbar</string>
+    <string name="snackbar_long">Show Long Snackbar</string>
+    <string name="snackbar_indefinite">Show Indefinite Snackbar</string>
+    <string name="snackbar_counter">%1$d snackbars created</string>
+
+    <string name="animation_mode">Animation Mode</string>
+    <string name="animation_mode_fade">Fade</string>
+    <string name="animation_mode_slide">Slide</string>
+
+    <string name="dismiss">Dismiss</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
