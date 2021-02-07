@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.NotificationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_basic_notification"
+            style="@style/ClickableTextRow"
+            android:text="@string/notification_show_basic"/>
+
+        <Button
+            android:id="@+id/bt_action_notification"
+            style="@style/ClickableTextRow"
+            android:text="@string/notification_show_action"/>
+
+        <Button
+            android:id="@+id/bt_button_notification"
+            style="@style/ClickableTextRow"
+            android:text="@string/notification_show_button"/>
+
+        <Button
+            android:id="@+id/bt_reply_notification"
+            style="@style/ClickableTextRow"
+            android:text="@string/notification_show_reply"/>
+
+        <Button
+            android:id="@+id/bt_reply_expansible_text"
+            style="@style/ClickableTextRow"
+            android:text="@string/notification_show_expansible_text"/>
+
+    </LinearLayout>
+
+</ScrollView>

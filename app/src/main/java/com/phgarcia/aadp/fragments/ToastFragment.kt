@@ -25,13 +25,13 @@ class ToastFragment : Fragment() {
         inflater.inflate(R.layout.fragment_toast, container, false).apply {
 
             findViewById<Button>(R.id.bt_short_toast)
-                .setOnClickListener { showShortToast() }
+                    .setOnClickListener { showShortToast() }
 
             findViewById<Button>(R.id.bt_long_toast)
-                .setOnClickListener { showLongToast() }
+                    .setOnClickListener { showLongToast() }
 
             findViewById<Button>(R.id.bt_custom_toast)
-                .setOnClickListener { showCustomToast() }
+                    .setOnClickListener { showCustomToast() }
 
         }
 

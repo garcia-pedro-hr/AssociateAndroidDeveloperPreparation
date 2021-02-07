@@ -32,16 +32,15 @@ class SnackbarFragment : Fragment() {
         inflater.inflate(R.layout.fragment_snackbar, container, false).apply {
 
             findViewById<Button>(R.id.bt_short_snackbar)
-                .setOnClickListener { showShortSnackbar() }
+                    .setOnClickListener { showShortSnackbar() }
 
             findViewById<Button>(R.id.bt_long_snackbar)
-                .setOnClickListener { showLongSnackbar() }
+                    .setOnClickListener { showLongSnackbar() }
 
             findViewById<Button>(R.id.bt_indefinite_snackbar)
-                .setOnClickListener { showIndefiniteSnackbar() }
+                    .setOnClickListener { showIndefiniteSnackbar() }
 
             findViewById<RadioGroup>(R.id.rg_animation_modes).apply {
-
                 setOnCheckedChangeListener { _, checkedId ->
                     onAnimationModeChanged(checkedId)
                     Log.d(TAG, "selectedAnimationMode=$selectedAnimationMode")
@@ -49,6 +48,7 @@ class SnackbarFragment : Fragment() {
 
                 check(R.id.rb_animation_mode_fade)
             }
+
         }
 
     private fun onAnimationModeChanged(checkedId: Int) {
@@ -71,7 +71,7 @@ class SnackbarFragment : Fragment() {
     private fun showIndefiniteSnackbar() =
         view?.let {
             with (Snackbar.make(it, snackbarText, Snackbar.LENGTH_INDEFINITE)) {
-                setupSnackbar(this).setAction(R.string.dismiss) { dismiss() }.show()
+                setupSnackbar(this).setAction(R.string.label_dismiss) { dismiss() }.show()
             }
         }
 

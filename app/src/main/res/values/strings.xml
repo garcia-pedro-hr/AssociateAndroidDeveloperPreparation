@@ -2,27 +2,52 @@
     <string name="app_name">Associate Android Developer Preparation</string>
 
     <string name="screen_title_toast">Toasts</string>
-    <string name="screen_title_snackbar">Snackbar</string>
+    <string name="screen_title_snackbar">Snackbars</string>
+    <string name="screen_title_notification">Notifications</string>
 
     <string name="toast">Toasts</string>
     <string name="snackbar">Snackbars</string>
-    <string name="localization">Localization</string>
+    <string name="notifications">Notifications</string>
 
-    <string name="toast_short">Show Short Toast</string>
-    <string name="toast_long">Show Long Toast</string>
-    <string name="toast_custom">Show Custom Toast</string>
+    <string name="toast_show_short">Show Short Toast</string>
+    <string name="toast_show_long">Show Long Toast</string>
+    <string name="toast_show_custom">Show Custom Toast</string>
     <string name="toast_counter">%1$d toasts created</string>
 
-    <string name="snackbar_short">Show Short Snackbar</string>
-    <string name="snackbar_long">Show Long Snackbar</string>
-    <string name="snackbar_indefinite">Show Indefinite Snackbar</string>
+    <string name="snackbar_show_short">Show Short Snackbar</string>
+    <string name="snackbar_show_long">Show Long Snackbar</string>
+    <string name="snackbar_show_indefinite">Show Indefinite Snackbar</string>
     <string name="snackbar_counter">%1$d snackbars created</string>
 
     <string name="animation_mode">Animation Mode</string>
     <string name="animation_mode_fade">Fade</string>
     <string name="animation_mode_slide">Slide</string>
 
-    <string name="dismiss">Dismiss</string>
+    <string name="notification_show_basic">Show Basic Notification</string>
+    <string name="notification_show_action">Show Action Notification</string>
+    <string name="notification_show_button">Show Button Notification</string>
+    <string name="notification_show_reply">Show Reply Notification</string>
+    <string name="notification_show_expansible_text">Show Expansible Text Notification</string>
+    <string name="notification_basic">Basic Notification</string>
+    <string name="notification_action">Action Notification</string>
+    <string name="notification_button">Button Notification</string>
+    <string name="notification_reply">Reply Notification</string>
+    <string name="notification_expansible_text">Expansible Text Notification</string>
+    <string name="notification_counter">%1$d notifications created</string>
+    <string name="notification_action_received">Notification Action Received: %1$s</string>
+
+    <string name="label_dismiss">Dismiss</string>
+    <string name="label_reply">Reply</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lorem_ipsum_title">Lorem ipsum</string>
+    <string name="lorem_ipsum_text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Cras dapibus sit amet lorem quis malesuada.
+        Morbi nec nunc tincidunt, euismod ante quis, mattis elit.
+        Donec id lacinia erat, ac condimentum urna.
+        Proin bibendum egestas imperdiet.
+        Duis aliquet velit eu purus semper finibus.
+        Ut nec nibh vitae lorem ullamcorper aliquam et in tortor.
+    </string>
 </resources>

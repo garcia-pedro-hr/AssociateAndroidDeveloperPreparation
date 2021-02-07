@@ -15,21 +15,21 @@
         <Button
             android:id="@+id/bt_short_snackbar"
             style="@style/ClickableTextRow"
-            android:text="@string/snackbar_short"
+            android:text="@string/snackbar_show_short"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"/>
 
         <Button
             android:id="@+id/bt_long_snackbar"
             style="@style/ClickableTextRow"
-            android:text="@string/snackbar_long"
+            android:text="@string/snackbar_show_long"
             app:layout_constraintTop_toBottomOf="@id/bt_short_snackbar"
             app:layout_constraintStart_toStartOf="parent"/>
 
         <Button
             android:id="@+id/bt_indefinite_snackbar"
             style="@style/ClickableTextRow"
-            android:text="@string/snackbar_indefinite"
+            android:text="@string/snackbar_show_indefinite"
             app:layout_constraintTop_toBottomOf="@id/bt_long_snackbar"
             app:layout_constraintStart_toStartOf="parent"/>
 

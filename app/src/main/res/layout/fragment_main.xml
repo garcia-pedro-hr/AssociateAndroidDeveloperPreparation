@@ -23,8 +23,9 @@
             android:text="@string/snackbar"/>
 
         <Button
+            android:id="@+id/tv_notification"
             style="@style/ClickableTextRow"
-            android:text="@string/localization"/>
+            android:text="@string/notifications"/>
 
     </LinearLayout>
 

@@ -4,12 +4,15 @@
     package="com.phgarcia.aadp">
 
     <application
+        android:name=".MyApplication"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AssociateAndroidDeveloperPreparation"
         tools:ignore="AllowBackup">
+
+        <receiver android:name=".receivers.MyNotificationBroadcastReceiver"/>
 
         <activity android:name=".MainActivity">
             <intent-filter>

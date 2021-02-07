@@ -9,16 +9,16 @@
     <Button
         android:id="@+id/bt_short_toast"
         style="@style/ClickableTextRow"
-        android:text="@string/toast_short"/>
+        android:text="@string/toast_show_short"/>
 
     <Button
         android:id="@+id/bt_long_toast"
         style="@style/ClickableTextRow"
-        android:text="@string/toast_long"/>
+        android:text="@string/toast_show_long"/>
 
     <Button
         android:id="@+id/bt_custom_toast"
         style="@style/ClickableTextRow"
-        android:text="@string/toast_custom"/>
+        android:text="@string/toast_show_custom"/>
 
 </LinearLayout>

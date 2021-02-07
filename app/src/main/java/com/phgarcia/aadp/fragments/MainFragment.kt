@@ -13,7 +13,7 @@ class MainFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View =
-         inflater.inflate(R.layout.main_fragment, container, false).apply {
+         inflater.inflate(R.layout.fragment_main, container, false).apply {
 
              findViewById<Button>(R.id.tv_toast).setOnClickListener {
                  findNavController().navigate(R.id.action_mainFragment_to_toastFragment)
@@ -21,6 +21,10 @@ class MainFragment : Fragment() {
 
              findViewById<Button>(R.id.tv_snackbar).setOnClickListener {
                  findNavController().navigate(R.id.action_mainFragment_to_snackbarFragment)
+             }
+
+             findViewById<Button>(R.id.tv_notification).setOnClickListener {
+                 findNavController().navigate(R.id.action_mainFragment_to_notificationFragment)
              }
 
          }
