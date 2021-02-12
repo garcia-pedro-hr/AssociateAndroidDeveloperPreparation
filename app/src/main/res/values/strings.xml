@@ -4,10 +4,12 @@
     <string name="screen_title_toast">Toasts</string>
     <string name="screen_title_snackbar">Snackbars</string>
     <string name="screen_title_notification">Notifications</string>
+    <string name="screen_title_work_manager">Work Manager</string>
 
     <string name="toast">Toasts</string>
     <string name="snackbar">Snackbars</string>
     <string name="notifications">Notifications</string>
+    <string name="work_manager">Work Manager</string>
 
     <string name="toast_show_short">Show Short Toast</string>
     <string name="toast_show_long">Show Long Toast</string>
@@ -36,7 +38,15 @@
     <string name="notification_counter">%1$d notifications created</string>
     <string name="notification_action_received">Notification Action Received: %1$s</string>
 
+    <string name="blur_select_amount">Select blurred amount</string>
+    <string name="blur_level_0">No blur</string>
+    <string name="blur_level_1">A little blurred</string>
+    <string name="blur_level_2">More blurred</string>
+    <string name="blur_level_3">The most blurred</string>
+
+    <string name="label_cancel">Cancel</string>
     <string name="label_dismiss">Dismiss</string>
+    <string name="label_go">Go</string>
     <string name="label_reply">Reply</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>

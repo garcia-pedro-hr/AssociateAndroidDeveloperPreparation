@@ -1,7 +1,6 @@
 package com.phgarcia.aadp.fragments
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,12 +9,9 @@ import android.widget.RadioGroup
 import androidx.fragment.app.Fragment
 import com.google.android.material.snackbar.Snackbar
 import com.phgarcia.aadp.R
+import timber.log.Timber
 
 class SnackbarFragment : Fragment() {
-
-    companion object {
-        private val TAG: String = SnackbarFragment::class.java.simpleName
-    }
 
     private var counter = 0
 
@@ -43,7 +39,7 @@ class SnackbarFragment : Fragment() {
             findViewById<RadioGroup>(R.id.rg_animation_modes).apply {
                 setOnCheckedChangeListener { _, checkedId ->
                     onAnimationModeChanged(checkedId)
-                    Log.d(TAG, "selectedAnimationMode=$selectedAnimationMode")
+                    Timber.d("selectedAnimationMode=$selectedAnimationMode")
                 }
 
                 check(R.id.rb_animation_mode_fade)
@@ -80,12 +76,12 @@ class SnackbarFragment : Fragment() {
 
         addCallback(object: Snackbar.Callback() {
             override fun onDismissed(transientBottomBar: Snackbar?, event: Int) {
-                Log.d(TAG, "Snackbar dismissed")
+                Timber.d("Snackbar dismissed")
                 super.onDismissed(transientBottomBar, event)
             }
 
             override fun onShown(sb: Snackbar?) {
-                Log.d(TAG, "Snackbar shown")
+                Timber.d("Snackbar shown")
                 super.onShown(sb)
             }
         })

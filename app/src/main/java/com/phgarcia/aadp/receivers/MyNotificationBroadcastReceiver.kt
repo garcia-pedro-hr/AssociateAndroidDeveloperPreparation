@@ -7,7 +7,7 @@ import android.content.Intent
 import android.widget.Toast
 import androidx.core.app.NotificationManagerCompat
 import com.phgarcia.aadp.BuildConfig
-import com.phgarcia.aadp.fragments.NotificationFragment.Companion.KEY_TEXT_REPLY
+import com.phgarcia.aadp.utils.NotificationUtils.KEY_TEXT_REPLY
 
 class MyNotificationBroadcastReceiver : BroadcastReceiver() {
 

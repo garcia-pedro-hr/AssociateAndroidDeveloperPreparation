@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_mainFragment_to_notificationFragment"
             app:destination="@id/notificationFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_workManagerFragment"
+            app:destination="@id/workManagerFragment" />
     </fragment>
 
     <fragment
@@ -38,4 +41,11 @@
         android:name="com.phgarcia.aadp.fragments.NotificationFragment"
         android:label="@string/notifications"
         tools:layout="@layout/fragment_notification" />
+
+    <fragment
+        android:id="@+id/workManagerFragment"
+        android:name="com.phgarcia.aadp.fragments.WorkManagerFragment"
+        android:label="@string/screen_title_work_manager"
+        tools:layout="@layout/fragment_work_manager"/>
+
 </navigation>

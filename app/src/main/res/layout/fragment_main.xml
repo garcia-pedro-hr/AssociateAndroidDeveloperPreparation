@@ -27,6 +27,11 @@
             style="@style/ClickableTextRow"
             android:text="@string/notifications"/>
 
+        <Button
+            android:id="@+id/tv_work_manager"
+            style="@style/ClickableTextRow"
+            android:text="@string/work_manager"/>
+
     </LinearLayout>
 
 </ScrollView>

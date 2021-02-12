@@ -27,6 +27,9 @@ class MainFragment : Fragment() {
                  findNavController().navigate(R.id.action_mainFragment_to_notificationFragment)
              }
 
+             findViewById<Button>(R.id.tv_work_manager).setOnClickListener {
+                 findNavController().navigate(R.id.action_mainFragment_to_workManagerFragment)
+             }
          }
 
 }
